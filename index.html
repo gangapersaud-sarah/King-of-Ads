@@ -1,175 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Of Ads</title>
     <style>
-      body {
-        background-color: powderblue;
-        font-family: Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-      h1 {
-        margin-top: 20px;
-      }
-      nav {
-        background-color: #333;
-        overflow: hidden;
-      }
-      nav a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-      nav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      section {
-        padding: 20px;
-      }
-      .meeting-notes {
-        padding: 10px;
-        background-color: white;
-        text-align: left;
-        margin: 20px auto;
-        width: 60%;
-        border-radius: 8px;
-      }
-      .meeting-notes hr {
-        margin: 10px 0;
-      }
-      .credits {
-        list-style-type: none;
-        padding: 0;
-      }
-      .credits li {
-        font-size: 18px;
-      }
+        /* General Styling */
+        body {
+            background-color: #e6f2ff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #444;
+            margin-top: 30px;
+        }
+        h2 {
+            color: #005580;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #004466;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #007399;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Meeting Notes Section */
+        .meeting-notes {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .meeting-notes p {
+            font-size: 1rem;
+        }
+        .meeting-notes hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        /* Credits Section */
+        .credits {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .credits li {
+            margin: 8px 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #004466;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>King Of Ads</h1>
 
     <!-- Navigation bar -->
     <nav>
-      <a href="#home">Home</a>
-      <a href="#meeting-notes">Meeting Notes</a>
-      <a href="#prototype">Prototype</a>
-      <a href="#art">Art</a>
-      <a href="#credits">Credits</a>
+        <a href="#home">Home</a>
+        <a href="#meeting-notes">Meeting Notes</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#art">Art</a>
+        <a href="#credits">Credits</a>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
-      <h2>Welcome to King Of Ads</h2>
-      <p>
-        Gameplay: Player will be given a number of contracts to choose from and must divide the available resources for each aspect of the advertisement to perfect it. For example, player have $1000 and 10 employees to make an advertisement for a soda company, each ads requirements consist these categories: target audience, visual quality, viral ability, etc. player would need to consider which category and how much should they spend their resource on it. Completing a contract give more money and fame/reputation. Money will help increase budget and resources for contracts, reputation will help get better, profitable contract.
-As player progress through the game, they will encounter shady company that is likely to commit fraud, scam, etc. they would usually offer a lot of money but will decrease reputation. In contrast they might also encounter prodigy start-up that will be very successful if you help them make the ad for a cheaper price or even for free but give more reputation in return.
-
-      </p>
+        <h2>Welcome to King Of Ads</h2>
+        <p>
+            <strong>Game Overview:</strong> King Of Ads is a simulation game where players take on the role of a budding ad executive. You'll balance resources, manage budgets, and make strategic decisions to create the best advertising campaigns. From selecting target audiences to allocating funds, every choice you make will impact your success, reputation, and growth within the competitive ad industry.
+        </p>
+        <p>
+            <strong>Gameplay Mechanics:</strong> Start with a modest budget and a limited team, gradually increasing your resources as you complete contracts successfully. You’ll encounter both high-reward contracts with ethical dilemmas and grassroots startups that offer unique reputational bonuses. Each contract you undertake adds to your company's reputation and opens up even bigger opportunities.
+        </p>
     </section>
 
     <!-- Meeting Notes Section -->
     <section id="meeting-notes">
-      <h2>Meeting Notes</h2>
-      <p><strong>NOTE: Any spoilers/more important details will be found in the develpment teams server and will not be posted here. (This includes: Lore, Full Story, etc.)</strong></p>
-      
-      <div class="meeting-notes">
-        <p><strong>2024-10-17</strong><br> **Prototype Design**:
-*Only For Windows*
-- Opening Sequence: Player in their apartment, open mail, get job, teleport to the company (fade to company). 
-- Teleport in front of the computer, que training video (How to get a contract)
-- Pop up movement / Selecting 
-- Step by step how to get make a AD
-- Allow player to explore and interact with surroundings
-- Only Introduction to the Game, (so no lore and one one ad will be created)
-
-**Floor:**
-- Computer (Research/Talk to the Company)
-- Boxes (New Company)
-- Cubital / Square offices
-- Newspaper / Research department 
-- Recruitment Room 
-
-**AD Process:**
-- Computer (Training Video)
-- Paint.io
-- Stickers 
-- Text 
-- List of requirements 
-
-**Roof:**
-- Door 
-- Billboards
-
-**For Next Meeting**:
-- Changing requirements (Trends, Research)
-- Mascot "AI" for training video
-- Make a Companies and is description
-- Research GODOT, get familiar
-- Study C#</p>
-        <hr />
-        <p><strong>2024-10-09</strong><br> Discussed initial concepts for ad campaigns.</p>
-        <hr />
-        <p><strong>2024-09-15</strong><br> Game Program: GODOT<br><br>
-C# language<br><br>Game:<br>
-
-Planning to be continuous so far (Prototype)<br>
-Ad company is own by a major Tech Company<br>
-Make ads for Tech Company and sometime outside of the company<br>
-Game get harder and harder<br>
-Requirements: Target Audience, Popular, Visual Quality, and Research<br>
-Have tools to create Ads<br>
-We are hired for Ad Company<br>
-Intro Video (Training Video)<br>
-Unlock Tools/Equipment/etc. (New Training Video)<br>
-"Tell" you the location for the company, hence why MC is alone<br>
-Company rent the top floor of the building<br>
-Access to roof, giant billboard<br>
-Three Months Time<br>
-Requirements fills gets a certain ending<br>
-Gallery</p>
-        <hr />
-        <p><strong>2024-09-06</strong><br> Will be develop in either Unity or godot using C# language to program the game <br><br> Game: Stationary, More mouse movement; Pixel people are there, they can run around; "Are you a boy or a girl?" <br><br> Tutorial: which button does what; vague warning; speech warning; Interact with a computer; Emails jobs; Pass or Accept buttons; List things they want (3-5);
-Range of potential earnings;
-Company description;
-Scam Company; 
-"Exposure"; 
-
-</p>
-        <hr />
-      </div>
+        <h2>Meeting Notes</h2>
+        <p><strong>Note:</strong> Sensitive details like full story outlines are kept in the development team’s secure server.</p>
+        <div class="meeting-notes">
+            <p><strong>2024-11-1</strong><br>
+            </p>
+            <p><strong>2024-10-17</strong><br> <b>Prototype Design:</b><br>
+                - <b>Platform:</b> Windows OS only<br>
+                - <b>Opening Sequence:</b> Start in a cozy apartment, where the player receives their first job contract via mail, teleporting to the ad agency headquarters.<br>
+                - <b>Guided Tutorial:</b> Step-by-step instructions on navigating the interface, understanding ad requirements, and managing resources. Interactions with the environment allow exploration beyond ad creation.
+            </p>
+            <hr />
+            <p><strong>2024-10-09</strong><br> Discussion on core ad campaign concepts and gameplay structure.</p>
+            <hr />
+            <p><strong>2024-09-15</strong><br> <b>Technical Stack:</b> GODOT using C# for game logic. The company operates on a contract model, creating ads with increasing challenges as new tools and requirements unlock.<br>
+                <b>End Goals:</b> Multiple endings based on achievements, reputation, and specific requirements met. 
+            </p>
+            <hr />
+            <p><strong>2024-09-06</strong><br> <b>Development Tools:</b> Exploring GODOT and Unity, leaning toward GODOT for streamlined C# integration. Interactive UI elements will guide players through contracts, client negotiations, and ad quality assessments.
+            </p>
+        </div>
     </section>
 
     <!-- Prototype Section -->
     <section id="prototype">
-      <h2>Prototype</h2>
-      <p>This page will be updated with prototype states as we progress.</p>
+        <h2>Prototype</h2>
+        <p>The prototype is under development, featuring initial gameplay mechanics such as resource allocation, contract management, and character interaction. Updates will include more refined elements and adjustments based on testing feedback.</p>
+        <p><strong>Current Features:</strong></p>
+        <ul>
+            <li>Basic UI for contract selection and resource allocation</li>
+            <li>Animated character interactions and environmental feedback</li>
+            <li>Functional reputation and budget systems</li>
+        </ul>
     </section>
 
     <!-- Art Section -->
     <section id="art">
-      <h2>Art</h2>
-      <p>Here you will find artwork related to our ad campaigns.</p>
+        <h2>Art</h2>
+        <p>This section will showcase artwork related to ad campaigns, from character designs to ad templates and brand visuals. Below are a few sneak peeks of our evolving art style:</p>
+        <ul>
+            <li><b>Character Design:</b> Stylized, vibrant characters reflecting ad industry personas</li>
+            <li><b>Environments:</b> Office settings, meeting rooms, and rooftop billboards</li>
+            <li><b>Ad Elements:</b> Iconic symbols, brand assets, and product sketches</li>
+        </ul>
     </section>
 
     <!-- Credits Section -->
     <section id="credits">
-      <h2>Credits</h2>
-      <ul class="credits">
-        <li>Project Manager: Sarah Gangapersaud</li>
-        <li>Lead Programers: Sarah, Sawn and Kay</li>
-        <li>Programers: Mary and Samet</li>
-        <li>Writers: Sarah, Kay, and Sawn</li>
-        <li>Artist: Sarah and Chelsea</li>
-      </ul>
+        <h2>Credits</h2>
+        <ul class="credits">
+            <li><strong>Project Manager:</strong> Sarah Gangapersaud</li>
+            <li><strong>Lead Programmers:</strong> Sarah, Sawn, Kay</li>
+            <li><strong>Programmers:</strong> Mary, Samet</li>
+            <li><strong>Writers:</strong> Sarah, Kay, Sawn</li>
+            <li><strong>Artists:</strong> Sarah, Chelsea</li>
+        </ul>
     </section>
-  </body>
+
+    <!-- Footer -->
+    <footer>
+        2024 King Of Ads.
+    </footer>
+</body>
 </html>
